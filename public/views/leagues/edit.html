@@ -1,0 +1,30 @@
+<div ng-controller="LeaguesController">
+    <form class="form-horizontal" ng-submit="update()" ng-init="findOne()">
+        <div class="control-group">
+            <label class="control-label" for="restaurant">Posting Title</label>
+            <div class="controls restname">
+                <input type="text" ng-model="league.restaurant" id="restaurant" placeholder="Posting Title">
+            </div>
+            <label class="control-label" for="item">Information</label>
+            <div class="controls items">
+                <input type="text" ng-model="league.item1" id="item" placeholder="Id Name">
+                <input type="text" ng-model="league.item2" id="item" placeholder="Date of Post">
+                <input type="text" ng-model="league.item3" id="item" placeholder="Replies">
+                <input type="text" ng-model="league.item4" id="item" placeholder="Views">
+                <input type="text" ng-model="league.item5" id="item" placeholder="Last message User ID">
+                <input type="text" ng-model="league.item6" id="item" placeholder="Date of Message">
+                <textarea type="text" cols="120" rows= "10" ng-model="league.item7" id="item" placeholder="Posting Text Field"></textarea>
+                <textarea type="text" cols="30" rows= "10" ng-model="league.item8" id="item" placeholder="Posting Bottom"></textarea>
+
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <input type="submit" class="btn">
+            </div>
+        </div>
+        <div>
+            <a href="#!/leagues">Back to List</a>
+        </div>
+    </form>
+</div>

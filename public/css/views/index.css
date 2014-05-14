@@ -1,0 +1,74 @@
+div.restname{
+    margin-bottom: 20px;
+}
+
+div.items{
+    width: 100px;
+}
+
+div.items input{
+    margin-bottom: 5px;
+}
+
+body{
+    background-color: black;
+}
+
+div.main th{
+    color: white;
+}
+
+div.main a{
+    color: #ffd570;
+}
+
+span.y{
+    color: #ffd570;
+}
+
+.dGray{
+    color: dimgray;
+}
+
+tr.posting{
+    border-bottom: solid 1px #4f3611;
+}
+
+tr.title{
+    border: solid 1px #bd7700;
+}
+
+span.lGray{
+    color: darkgray;
+}
+
+td.white{
+    color: white;
+}
+
+a.newPost{
+    color: orange;
+}
+
+div.items textarea{
+    width: 500px;
+}
+
+h2.viewTitle{
+    color: #bd7700;
+    border-bottom: solid 1px #bd7700;
+}
+
+pre.post{
+    background-color: black;
+    color: lightgray;
+}
+
+p.postBtm{
+    border-top-style: dotted;
+    color: #808080;
+}
+
+label{
+    color: white;
+}

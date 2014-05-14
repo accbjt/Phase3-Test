@@ -1,0 +1,19 @@
+<div ng-controller="OrderController">
+    <form class="form-horizontal" ng-submit="create()">
+        <div class="control-group">
+            <label class="control-label" for="menuItem">Menu Item</label>
+            <div class="controls">
+                <input type="text" ng-model="order.menuItem" id="menuitem" placeholder="Menu Item">
+            </div>
+            <label class="control-label" for="specialrequest">Special Request</label>
+            <div class="controls">
+                <input type="text" ng-model="order.specialRequest" id="specialrequest" placeholder="Special Request">
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <input type="submit" class="btn">
+            </div>
+        </div>
+    </form>
+</div>

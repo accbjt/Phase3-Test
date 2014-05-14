@@ -1,0 +1,49 @@
+<div ng-controller="LeaguesController" ng-init="find()">
+    <div class="main">
+        <table>
+            <tr class="title">
+                <th width="100px"></th>
+                <th width="700px" align="left">Title</th>
+                <th width="50px">Start Date</th>
+                <th width="50px" align="left">Replies</th>
+                <th width="50px" align="right">Views</th>
+                <th width="200px" align="right">Last Message</th>
+            </tr>
+
+            <tr class="posting" ng-repeat="league in leagues">
+                    <td width="100px"><img src="./img/{{$index}}.jpg" alt=""/></td>
+                    <td>
+                        <a href="#!/leagues/{{ league._id }}">{{league.restaurant}}</a>
+                        <br>
+                        <span class="dGray">{{ league.item1 }},</span>
+                        <span class="lGray">{{ league.item2 }}</span>
+
+                    </td>
+                    <!--(<a href="#!/leagues/{{ league._id }}/edit">Edit</a>)-->
+                    <!--(<a href="" ng-click="destroy(league)" >Remove</a>)-->
+                    <td align="right"><img src="./img/icon{{$index}}.jpg" alt=""/></td>
+                    <td class="dGray">
+                        Replies:
+                        <br>
+                        Views:
+                    </td>
+                    <td class="white" align="right">
+                        {{ league.item3}}
+                        <br>
+                        {{ league.item4}}
+                    </td>
+                    <td align="right">
+                        <span class="y">{{ league.item5}}</span>
+                        <br>
+                        <span class="dGray">{{ league.item6}}</span>
+                    </td>
+
+            </tr>
+
+
+        </tr>
+        </table>
+    </div>
+    <br>
+    <a class="newPost" href="#!/leagues/create">New Post</a>
+</div>
